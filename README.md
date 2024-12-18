@@ -13,7 +13,9 @@ as you can see, it doesnt get any simpler than this
 
 ### benchmark stuff
 i have no idea how these work or if im doing them correctly (definitely not considering this error that i cant figure out)
+
 >Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet system without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
+
 ignoring that, here's the benchmark showing how fast it is, usefulnes being a cost of speed
 ```
 >hyperfine --warmup 64 -N ./microfetch
