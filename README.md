@@ -11,7 +11,17 @@ as you can see, it doesnt get any simpler than this
 
 *i recommend [tzyfetch](https://github.com/cappsyco/tzyfetch) if you want an actually useful simple and fast fetch*
 
-### benchmark stuff
+## Install
+If you want this for some reason, just use the Make command to build it (i spent 1 hour on it(i'm dumb ok? it was my first time doing Makefiles))
+```sh
+# to build
+make
+# to clean the files
+make clean
+```
+pretty straight forward if you ask me
+
+## Benchmark stuff
 i have no idea how these work or if im doing them correctly (definitely not considering this error that i cant figure out)
 
 >Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet system without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
