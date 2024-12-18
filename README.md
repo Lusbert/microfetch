@@ -5,6 +5,17 @@ and then gets compiled into an executable
 
 <img src="screenshots/example.png" width="49%" align="left" />
 
+
+### benchmark stuff
+i have no idea how these work or if im doing them correctly (definitely not considering this error that i cant figure out)
+`Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet system without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.`
+ignoring that, here's the benchmark showing how fast it is, usefulnes being a cost of speed
+```
+>hyperfine --warmup 64 -N ./microfetch
+Time (mean ± σ):     270.1 µs ±  69.9 µs    [User: 223.7 µs, System: 14.5 µs]
+Range (min … max):   203.8 µs … 1463.8 µs    10154 runs
+```
+
 PS: I may have used ChatGPT's help for the python script cause I'm stupid, but pfsh who cares if it works it works.
 but well hey ChatGPT wasnt doing it right so i still had to edit a lot of the code and figure out some stuff so ig that's better than nothing, right?
 PS2: this project was inspired by [tzyfetch](https://github.com/cappsyco/tzyfetch), i also stole almost every asset from them so, sorry?
