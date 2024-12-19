@@ -1,6 +1,7 @@
 # color codes and logos stolen form https://github.com/cappsyco/tzyfetch/
 import os
 import socket
+import platform
 
 os_dict = {
     "adelie"               :  "\\033[1;31m_/\\`",
@@ -98,6 +99,7 @@ os_dict = {
     "void"                 :  "\\033[1;32m(\\\\)",
     "wolfi"                :  "\\033[1;31m,O,",
     "zorin"                :  "\\033[1;34m<Z>",
+    "Winblows may haps"    :  "\\033[1;94m|||",
 }
 def get_os_id():
     try:
@@ -107,6 +109,8 @@ def get_os_id():
                 if key.strip() == "ID":
                     return value.strip().strip('"')
     except FileNotFoundError:
+        return "Winblows may haps"
+    except:
         return "Unknown ID"
 
 def get_os_name():
@@ -117,6 +121,8 @@ def get_os_name():
                 if key.strip() == "NAME":
                     return value.strip().strip('"')
     except FileNotFoundError:
+        return platform.system()+" "+platform.release()
+    except:
         return "Unknown NAME"
 
 
