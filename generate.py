@@ -1,7 +1,6 @@
 # color codes and logos stolen form https://github.com/cappsyco/tzyfetch/
 import os
 import socket
-import sys
 
 os_dict = {
     "adelie"               :  "\\033[1;31m_/\\`",
@@ -143,8 +142,10 @@ int main(void) {{
 """
     return output
 
-if '-q' not in sys.argv:
+
+if __name__ == "__main__":
     print("generated C file:\n\n"+generate_output())
-output = generate_output()
-with open("source.c", "w") as file:
-            file.write(output)
+    output = generate_output()
+    with open("source.c", "w") as file:
+                file.write(output)
+
