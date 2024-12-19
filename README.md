@@ -26,7 +26,7 @@ i have no idea how these work or if im doing them correctly (definitely not cons
 
 >Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet system without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
 
-ignoring that, here's the benchmark showing how fast it is, usefulnes being a cost of speed
+ignoring that, here's the benchmark showing how fast it is, usefulnes being at the cost of speed
 ```
 >hyperfine --warmup 64 -N ./microfetch
 Time (mean ± σ):     270.1 µs ±  69.9 µs    [User: 223.7 µs, System: 14.5 µs]
