@@ -1,10 +1,10 @@
 CC=gcc
-CFLAGS=-Wall -Wextra -Werror -pedantic -O2
+CFLAGS=-Wall -Wextra -Werror -pedantic -O2 -s
 
 all: microfetch
 
 source.c: generate.py
-	    python generate.py -q
+	    python generate.py
 
 microfetch: source.c
 	    $(CC) $(CFLAGS) -o microfetch source.c
